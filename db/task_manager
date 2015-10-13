@@ -1,9 +1,6 @@
 ---
 tasks:
-- id: 1
-  title: go to shannons house
-  description: at 4:15
 - id: 2
   title: play taboo
-  description: for fun
+  description: with Josh
 total: 2

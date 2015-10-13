@@ -15,6 +15,11 @@
 
   <% @tasks.each do |task| %>
   <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
+  <a href="tasks/<%= task.id %>/edit">Edit</a>
+  <form action="/tasks/<%= task.id %>" method="POST">
+   <input type="hidden" name="_method" value="delete">
+   <input type="submit" value="Delete">
+ </form>
   <% end %>
 
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
