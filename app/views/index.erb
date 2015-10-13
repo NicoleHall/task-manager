@@ -1,5 +1,24 @@
-<h1>All Tasks</h1>
+<!DOCTYPE html>
+<html lang ='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Task Manager</title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='css/bootstrap.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container text-center bigger"
 
-<% @tasks.each do |task| %>
+  <h1><strong>All Tasks</strong></h1>
+</div>
+
+  <% @tasks.each do |task| %>
   <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-<% end %>
+  <% end %>
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src='js/bootstrap.js'></script>
+</body>
+</html>

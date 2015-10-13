@@ -1,6 +1,36 @@
-<h1>Welcome to the Task Manager</h1>
+<!-- <div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to the Task Manager</h1>
+  </div>
 
 <ul>
   <li><a href="/tasks">Task Index</a></li>
   <li><a href="/tasks/new">New Task</a></li>
-</ul>
+</ul> -->
+
+
+<!DOCTYPE html>
+<html lang ='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Task Manager</title>
+    <link href='css/bootstrap.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+    <h1 class="text-center">Welcome to the Task Manager</h1>
+      <div>
+        Which button would you like to click?
+      </div>
+
+      <div class="btn-group">
+      <a href="/tasks" class="btn btn-lg btn-info">Index Task</a>
+      <a href="/tasks/new" class="btn btn-lg btn-info">New Tasks</a>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src='js/bootstrap.js'></script>
+  </body>
+</html>
